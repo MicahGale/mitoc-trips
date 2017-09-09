@@ -42,7 +42,7 @@ def membership_expiration(emails):
     """
     # First membership matching will be the most current
     matches = matching_memberships(emails)
-    return matches.values()[-1] if matches else repr_blank_membership()
+    return max(matches.values()) if matches else repr_blank_membership()
 
 
 def format_membership(email, membership_expires, waiver_expires):

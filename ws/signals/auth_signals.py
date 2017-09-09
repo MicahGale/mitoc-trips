@@ -1,5 +1,3 @@
-from __future__ import unicode_literals
-
 from django.contrib import messages
 from django.contrib.auth.models import Group
 from django.contrib.auth.signals import user_logged_in
